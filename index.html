@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- UIkit JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Prueba final S3</title>
+</head>
+
+<body>
+    <section id="menu_desktop">
+        <div
+            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">inicio</a></li>
+                        
+                        <li>
+                            <a href="#">productos</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Uno</a></li>
+                                    <li><a href="#">Dos</a></li>
+                                    <li><a href="#">Tres</a></li>
+                                    <li><a href="#">Cuatro</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <a class="uk-navbar-item uk-logo" href="#" style="font-family: 'Quicksand', sans-serif;
+                    color: #84c267;"><strong><i class="fas fa-leaf"></i> Go-green</strong></a>
+                        <li><a href="#">quienes somos</a></li>
+                        <li><a href="#">contacto</a></li>
+                        <li><a href="#">Login <i class="fas fa-sign-in-alt" style="color: #84c267; margin-left: 4px;"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section id="menu_mobile">
+        <nav class="uk-navbar uk-navbar-container uk-margin">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-overlay">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-item uk-logo" href="#" style="font-family: 'Quicksand', sans-serif;
+                color: #84c267;"><strong><i class="fas fa-leaf"></i> Go-green</strong></a>
+            </div>
+        </nav>
+        <div>
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar" style="background-color: #84c267e1;">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <br>
+                    <!-- Inicio menú movil -->
+                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                            <li class="uk-active" ><a href="#">Inicio</a></li>
+                            <li class="uk-parent">
+                                <a href="#">Productos</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="#">Producto A</a></li>
+                                    <li><a href="#">Producto B</a></li>
+                                    <li><a href="#">Producto C</a></li>
+                                    <li><a href="#">Producto D</a></li>
+                                </ul>
+                            </li>
+                            <li ><a href="#">Quienes somos</a></li>
+                            <li ><a href="#">Contacto</a></li>
+                            <li ><a href="#">Login</a></li>                            
+                        </ul>
+                    </div>
+                    <!-- Fin menú movil -->
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <div uk-slideshow="animation:fade ;ratio: 7:3;autoplay: true">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="img/img1.jpg" alt="" uk-cover />
+                </li>
+                <li>
+                    <img src="img/img2.jpg" alt="" uk-cover />
+                </li>
+                <li>
+                    <img src="img/img3.jpg" alt="" uk-cover />
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slideshow-item="next"></a>
+        </div>
+    </div>
+    <section class="main_section">
+        <div class="uk-container">
+            <h1 style="
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            color: #84c267;
+          ">
+                NUESTRA COMPAÑÍA
+            </h1>
+            <p style="text-align: justify;">
+                Nuestra compañía está dedicada desde 1978 al desarrollo de
+                fertilizantes naturales para el agro nacional e internacional. El
+                compromiso de <strong style="color: #84c267; font-family: 'Quicksand', sans-serif;">Go-green</strong> es
+                entregar a la comunidad un producto comprometido con el medioambiente
+                y el rendimiento de sus cosechas. Hemos desarrollado una línea de
+                fertilizantes con impacto ambiental 0 demostrando que nuestro
+                compromiso es completo con el medioambiente.
+            </p>
+            <p style="text-align: justify;">
+                En cuanto a los principios orgánicos, la fertilización del suelo y la
+                protección de plantas deben basarse en la elección de variedades
+                adecuadas, apropiados programas de rotación de cultivos, el cultivo
+                sostenible del suelo y la protección de los enemigos naturales de las
+                plagas. En el caso que estas medidas no garanticen la fertilidad
+                adecuada del suelo y el suficiente control de plagas, existen insumos
+                agrícolas comerciales que puedan utilizarse de conformidad con las
+                normas y reglamentos respectivos de cada regulación. Sin embargo es
+                difícil evaluar por parte de un agricultor si un determinado producto
+                puede ser realmente utilizado dada la enorme variedad existente de
+                productos en el mercado.
+            </p>
+            <p><strong style="color: #84c267;font-family: 'Quicksand', sans-serif;">Go-green</strong></p>
+            <hr class="uk-divider-icon" />
+        </div>
+    </section>
+    <section class="main_section">
+        <div class="uk-container">
+            <h1 style="text-align: center;font-family: 'Quicksand', sans-serif;color: #84c267;">
+                NUESTROS PRODUCTOS
+            </h1>
+            <p>
+                Aproveche de conocer algunos de nuestros productos recomendados. Todos y cada uno de ellos
+                formulados especialmente para hacer de nuestro mundo un lugar más limpio y seguro .
+            </p>
+        </div>
+    </section>
+    <section class="product_card">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="img/img1.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Root Enhancer BV2500</h3>
+                            <p>Enraizante de alto contenido en nutrientes con 0
+                                impacto al medioambiente. 100% Orgánico.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="img/img3.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">No+Fungus NB2500</h3>
+                            <p>Fungicida elaborado a componentes 100% naturales, altamente efectivo y cuidando
+                                nuestro medio ambiente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="uk-divider-icon" />
+        </div>
+    </section>
+    <div class="uk-container">
+    <img src="img/imagen_bottom.jpg" alt="" uk-img>
+</div>
+    <footer>
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

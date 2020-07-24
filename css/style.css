@@ -1,0 +1,66 @@
+.main_section{
+  padding: 10px;
+}
+
+  .mylogo {
+    
+    font-family: 'Quicksand', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+
+  }
+  .footer {
+    background: #487434b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 50px;
+    color: rgba(255, 255, 255, 0.788);
+    font-family: 'Quicksand', sans-serif;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: rgb(255, 255, 255);
+    opacity: 0.35;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  
+  #menu_mobile{
+    display: none;
+  }
+  
+
+  @media (min-width: 320px) and (max-width: 590px) {
+  
+    #menu_desktop{
+      display: none;
+    }
+    #menu_mobile{
+      display:block ;
+    }
+
+  
+
+  }
+
+  @media (min-width:280px) and (max-width: 480px) {
+  
+    #menu_desktop{
+      display: none;
+    }
+    #menu_mobile{
+      display:block ;
+    }
+
+  
+
+  }
