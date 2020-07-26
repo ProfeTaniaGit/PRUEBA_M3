@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+     <!-- UIkit JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link href="../css/all.css" rel="stylesheet" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Fertilizantes</title> 
+</head>
+<body>
+    <section id="menu_desktop">
+        <div
+            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="../index.html">inicio</a></li>
+
+                        <li>
+                            <a href="#">productos</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="producto_1.html">Fertilizantes</a></li>
+                                    <li><a href="producto_2.html">Fitosanitarios</a></li>
+                                    <li><a href="producto_3.html">Semillas</a></li>
+                                    <li><a href="producto_4.html">Bioestimulantes</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <a class="uk-navbar-item uk-logo" href="#" style="font-family: 'Quicksand', sans-serif;
+                    color: #84c267;"><strong><i class="fas fa-leaf"></i> Go-green</strong></a>
+                        <li><a href="acercade.html">Quienes somos</a></li>
+                        <li><a href="contactForm.html">Contacto</a></li>
+                        <li><a href="loginForm.html">Login <i class="fas fa-sign-in-alt"
+                                    style="color: #84c267; margin-left: 4px;"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section id="menu_mobile">
+        <nav class="uk-navbar uk-navbar-container uk-margin">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-overlay">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-item uk-logo" href="#" style="font-family: 'Quicksand', sans-serif;
+                color: #84c267;"><strong><i class="fas fa-leaf"></i> Go-green</strong></a>
+            </div>
+        </nav>
+        <div>
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar" style="background-color: #84c267e1;">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <br>
+                    <!-- Inicio menú movil -->
+                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                            <li class="uk-active" ><a href="../index.html">Inicio</a></li>
+                            <li class="uk-parent">
+                                <a href="#">Productos</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="producto_1.html">Fertilizantes</a></li>
+                                    <li><a href="producto_2.html">Fitosanitarios</a></li>
+                                    <li><a href="producto_3.html">Semillas</a></li>
+                                    <li><a href="producto_4.html">Biostimulantes</a></li>
+                                </ul>
+                            </li>
+                            <li ><a href="acercade.html">Quienes somos</a></li>
+                            <li ><a href="contactForm.html">Contacto</a></li>
+                            <li ><a href="loginForm.html">Login</a></li>                            
+                        </ul>
+                    </div>
+                    <!-- Fin menú movil -->
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <section class="main_section" uk-height-viewport>
+        <div class="uk-container uk-padding-large" >
+            <h1 style="
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            color: #84c267;
+          "> CUENTANOS TUS INQUIETUDES</h1>
+
+        </div>
+        <div class="uk-grid uk-padding" uk-grid >
+            <div class=" uk-width-*@s uk-child-width-*@s uk-width-1-2@m uk-   " >
+                <form action="post" >
+                    <div class="uk-margin">
+                        <div class="uk-inline uk-width-*@m">
+                            <span class="uk-form-icon" uk-icon="icon: user"> </span>
+                            <input type="text" placeholder="Nombre" class="uk-input uk-form"> 
+
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <div class="uk-inline uk-width-*@m">
+                            <span class="uk-form-icon" uk-icon="icon: mail"> </span>
+                            <input type="text" placeholder="Correo electrónico" class="uk-input uk-form"> 
+
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-inline uk-width-*@m">
+                            <span class="uk-form-icon" uk-icon="icon: pencil"> </span>
+                            <textarea class="uk-textarea"  rows="7" > </textarea>
+
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <button class="uk-button uk-button-secondary" type="button"> Enviar </button>
+                    </div>
+                   
+                    
+                </form>
+            </div>
+            <div class="uk-width-*@s uk-child-width-*@s uk-width-1-2@m  ">
+                <img data-src="../img/undraw_message_sent_1030.svg" width="100%" height="" class=" " alt="" uk-img>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer" >
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
